@@ -1,12 +1,12 @@
 ### EXPLORING HOUSING PRICES DATABASE WITH SQL ###
 
 USE house_price_regression;
-## Select all the data from table `house_price_data` to check if the data was imported correctly 
+# Select all the data from table `house_price_data` to check if the data was imported correctly 
 
 SELECT * FROM house_price_data
 LIMIT 5;
 
-## Use the alter table command to drop the column `date` from the database, as we would not use it in the analysis with SQL. Select all the data from the table to verify if the command worked. Limit your returned results to 10.
+# Use the alter table command to drop the column `date` from the database, as we would not use it in the analysis with SQL. Select all the data from the table to verify if the command worked. Limit your returned results to 10.
 
 ALTER TABLE house_price_data
 DROP COLUMN date;
@@ -73,15 +73,23 @@ GROUP BY waterfront;
 
     - Is there any correlation between the columns `condition` and `grade`? You can analyse this by grouping the data by one of the variables and then aggregating the results of the other column. Visually check if there is a positive correlation or negative correlation or no correlation between the variables.
 
-SELECT `condition`, grade
+
+### COME BACK TO THIS ####
+SELECT `condition`, AVG(grade)
 FROM house_price_data
-GROUP BY `condition`
+GROUP BY `condition`;
+### COME BACK TO THIS ####
 
-##### COME BACK TO THIS ONE #####
 
-        You might also have to check the number of houses in each category (ie number of houses for a given `condition`) to assess if that category is well represented in the dataset to include it in your analysis. For eg. If the category is under-represented as compared to other categories, ignore that category in this analysis
+    You might also have to check the number of houses in each category (ie number of houses for a given `condition`) to assess if that category is well represented in the dataset to include it in your analysis. For eg. If the category is under-represented as compared to other categories, ignore that category in this analysis
 
-One of the customers is only interested in the following houses:
+Select COUNT(id) AS number_of_houses, `condition`
+FROM house_price_data
+GROUP BY `condition`;
+
+# Observation: both 'condition' '1' and '2' have relatively low representation in data - will verify this in pyhton workbook further and decide.
+
+# One of the customers is only interested in the following houses:
 
     - Number of bedrooms either 3 or 4
     - Bathrooms more than 3
