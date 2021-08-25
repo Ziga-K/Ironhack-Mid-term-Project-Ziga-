@@ -78,7 +78,7 @@ GROUP BY waterfront;
 SELECT `condition`, AVG(grade)
 FROM house_price_data
 GROUP BY `condition`;
-### COME BACK TO THIS ####
+### COME BACK TO THIS #### STUCK
 
 
     You might also have to check the number of houses in each category (ie number of houses for a given `condition`) to assess if that category is well represented in the dataset to include it in your analysis. For eg. If the category is under-represented as compared to other categories, ignore that category in this analysis
