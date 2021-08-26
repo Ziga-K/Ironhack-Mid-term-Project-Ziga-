@@ -20,23 +20,23 @@ SELECT COUNT(*) FROM house_price_data;
 
 #  Now we will try to find the unique values in some of the categorical columns:
 
-    - What are the unique values in the column `bedrooms`?
+   # - What are the unique values in the column `bedrooms`?
 
 SELECT DISTINCT(bedrooms) FROM house_price_data;
 
-    - What are the unique values in the column `bathrooms`?
+   # - What are the unique values in the column `bathrooms`?
 
 SELECT DISTINCT(bathrooms) FROM house_price_data;
 
-    - What are the unique values in the column `floors`?
+   # - What are the unique values in the column `floors`?
 
 SELECT DISTINCT(floors) FROM house_price_data;
 
-    - What are the unique values in the column `condition`?
+  #  - What are the unique values in the column `condition`?
 
 SELECT DISTINCT(`condition`) FROM house_price_data;
 
-    - What are the unique values in the column `grade`?
+  # - What are the unique values in the column `grade`?
 
 SELECT DISTINCT(grade) FROM house_price_data;
 
@@ -59,29 +59,28 @@ SELECT bedrooms, AVG(price) AS average_price
 FROM house_price_data
 GROUP BY bedrooms;
 
-    - What is the average `sqft_living` of the houses grouped by bedrooms? The returned result should have only two columns, bedrooms and Average of the `sqft_living`. Use an alias to change the name of the second column.
+  #  - What is the average `sqft_living` of the houses grouped by bedrooms? The returned result should have only two columns, bedrooms and Average of the `sqft_living`. Use an alias to change the name of the second column.
 
 SELECT bedrooms, AVG(sqft_living) AS average_living_space
 FROM house_price_data
 GROUP BY bedrooms;
 
-    - What is the average price of the houses with a waterfront and without a waterfront? The returned result should have only two columns, waterfront and `Average` of the prices. Use an alias to change the name of the second column.
+  #  - What is the average price of the houses with a waterfront and without a waterfront? The returned result should have only two columns, waterfront and `Average` of the prices. Use an alias to change the name of the second column.
 
 SELECT waterfront, AVG(price) AS average_price
 FROM house_price_data
 GROUP BY waterfront;
 
-    - Is there any correlation between the columns `condition` and `grade`? You can analyse this by grouping the data by one of the variables and then aggregating the results of the other column. Visually check if there is a positive correlation or negative correlation or no correlation between the variables.
+ #   - Is there any correlation between the columns `condition` and `grade`? You can analyse this by grouping the data by one of the variables and then aggregating the results of the other column. Visually check if there is a positive correlation or negative correlation or no correlation between the variables.
 
+SELECT (AVG(`condition` * `grade`) - AVG(`condition`) + AVG(`grade`)) / (STDDEV(`condition`) * STDDEV(`grade`)) / 100 as correlation
+FROM house_price_data;
 
-### COME BACK TO THIS ####
-SELECT `condition`, AVG(grade)
-FROM house_price_data
-GROUP BY `condition`;
-### COME BACK TO THIS #### STUCK
+# There is a correlation between `condition` and `grade` columns, though not significant.
 
+#* MySQL STDDEV() function returns the population standard deviation of expression. The STDDEV() function is used to calculate statistical information for a specified numeric field in a query.
 
-    You might also have to check the number of houses in each category (ie number of houses for a given `condition`) to assess if that category is well represented in the dataset to include it in your analysis. For eg. If the category is under-represented as compared to other categories, ignore that category in this analysis
+ #   You might also have to check the number of houses in each category (ie number of houses for a given `condition`) to assess if that category is well represented in the dataset to include it in your analysis. For eg. If the category is under-represented as compared to other categories, ignore that category in this analysis
 
 Select COUNT(id) AS number_of_houses, `condition`
 FROM house_price_data
@@ -91,15 +90,15 @@ GROUP BY `condition`;
 
 # One of the customers is only interested in the following houses:
 
-    - Number of bedrooms either 3 or 4
-    - Bathrooms more than 3
-    - One Floor
-    - No waterfront
-    - Condition should be 3 at least
-    - Grade should be 5 at least
-    - Price less than 300000
+  #  - Number of bedrooms either 3 or 4
+  #  - Bathrooms more than 3
+  #  - One Floor
+  #  - No waterfront
+  #  - Condition should be 3 at least
+  #  - Grade should be 5 at least
+  #  - Price less than 300000
 
-    For the rest of the things, they are not too concerned. Write a simple query to find what are the options available for them?
+  #  For the rest of the things, they are not too concerned. Write a simple query to find what are the options available for them?
 
 SELECT id,
 FROM house_price_data
