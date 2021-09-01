@@ -76,6 +76,13 @@ GROUP BY waterfront;
 SELECT (AVG(`condition` * `grade`) - AVG(`condition`) + AVG(`grade`)) / (STDDEV(`condition`) * STDDEV(`grade`)) / 100 as correlation
 FROM house_price_data;
 
+## OR ##
+
+SELECT `condition`, AVG(grade)
+FROM house_price_data
+GROUP BY `condition`
+ORDER BY `condition`;
+
 # There is a correlation between `condition` and `grade` columns, though not significant.
 
 #* MySQL STDDEV() function returns the population standard deviation of expression. The STDDEV() function is used to calculate statistical information for a specified numeric field in a query.
