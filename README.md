@@ -73,7 +73,7 @@ The data set consists of information on some 22,000 properties.  The dataset co
 - checking outliers with describe function and plots
 - running machine learning on capped data
 
-**Conlusion**:
+**Conclusion**:
 I aimed to keep as much data as possible.
 Linear Regression model seems to perform best both runs with the data processing done. 
 After capping outliers the score had a notable change for the better.
@@ -86,23 +86,23 @@ After capping outliers the score had a notable change for the better.
 
 
 ***Libraries used:***
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-import statsmodels.api as sm
-import scipy.stats as stats
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsRegressor
-from sklearn.neural_network import MLPRegressor
-from sklearn.datasets import make_regression
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
-import warnings
+- import pandas as pd
+- import numpy as np
+- import seaborn as sns
+- import matplotlib.pyplot as plt
+- import statsmodels.api as sm
+- import scipy.stats as stats
+- from sklearn.model_selection import train_test_split
+- from sklearn.neighbors import KNeighborsRegressor
+- from sklearn.neural_network import MLPRegressor
+- from sklearn.datasets import make_regression
+- from sklearn.linear_model import LinearRegression
+- from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
+- import warnings
 
 ***Additional settings:***
-warnings.filterwarnings('ignore')
-pd.set_option('display.max_columns', None)
+- warnings.filterwarnings('ignore')
+- pd.set_option('display.max_columns', None)
 
 ***SQL***: Exploring data with answering set questions using SQL queries
 
