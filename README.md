@@ -77,6 +77,12 @@ The data set consists of information on some 22,000 properties.  The dataset co
 I aimed to keep as much data as possible.
 Linear Regression model seems to perform best both runs with the data processing done. 
 After capping outliers the score had a notable change for the better.
+1st run:
+![r2](1st run r2.png)
+![comparison](1st comp.png)
+2nd run:
+![r2](2nd run r2.png)
+![comparison](2nd comp.png)
 
 **Future work**:
 - try transform data with techniques like log, boxcox, scaling see how effect the model
