@@ -16,7 +16,7 @@ The data set consists of information on some 22,000 properties.  The dataset co
 
 ### We will try to achieve this in 3 chapters based on the tools used:
 
-***Python***: Dataset explore and processing with intent to build several machine learning models to predict housing values. 
+***1.Python***: Dataset explore and processing with intent to build several machine learning models to predict housing values. 
 
 ***Variables Description***
 - id - Identification
@@ -111,6 +111,6 @@ After capping outliers the score had a notable change for the better.
 - warnings.filterwarnings('ignore')
 - pd.set_option('display.max_columns', None)
 
-***SQL***: Exploring data with answering set questions using SQL queries
+***2.SQL***: Exploring data with answering set questions using SQL queries
 
-***Tableau***: Exploring data with answering set questions visually
+***3.Tableau***: Exploring data with answering set questions visually
