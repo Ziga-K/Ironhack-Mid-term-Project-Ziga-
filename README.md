@@ -2,7 +2,7 @@
 
 # House Pricing - Predicting Market Value
 
-<img src="https://miro.medium.com/max/1400/1*2djb7kXk2I4SNLBHogl87Q.jpeg" width="50%"></img>
+<img src="https://miro.medium.com/max/1400/1*2djb7kXk2I4SNLBHogl87Q.jpeg" width="100%"></img>
 
 *Background/objective*: 
 
