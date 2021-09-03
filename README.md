@@ -2,7 +2,9 @@
 
 # House Pricing - Predicting Market Value
 
-**Background/objective**: 
+<img src="https://miro.medium.com/max/1400/1*2djb7kXk2I4SNLBHogl87Q.jpeg" width="50%"></img>
+
+*Background/objective*: 
 
 - We are working as an analyst for a real estate company. The ompany wants to build a machine learning model to predict the selling prices of houses based on a variety of features on which the value of the house is evaluated. We will also be exploring the data to better undestand with with set questions and present the data visually. 
 
@@ -14,6 +16,5 @@
 
 ***Tableau***: Exploring data with answering set questions visually
 
-**Data**: The data set consists of information on some 22,000 properties.  The dataset consisted of historic data of houses sold between May 2014 to May 2015.
+*Data*: The data set consists of information on some 22,000 properties.  The dataset consisted of historic data of houses sold between May 2014 to May 2015.
 
-<img src="https://cloud.githubusercontent.com/assets/4307137/10105283/251b6868-63ae-11e5-9918-b789d9d682ec.png" width="30%"></img>
