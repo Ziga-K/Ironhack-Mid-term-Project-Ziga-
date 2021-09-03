@@ -77,12 +77,13 @@ The data set consists of information on some 22,000 properties.  The dataset co
 I aimed to keep as much data as possible.
 Linear Regression model seems to perform best both runs with the data processing done. 
 After capping outliers the score had a notable change for the better.
-1st run:
-<img src="https://github.com/Terminal-zkolar/Ironhack-Mid-term-Project-Ziga-/blob/main/Screenshots/1st%20run%20r2.png" width="20%"></img>
-<img src="https://github.com/Terminal-zkolar/Ironhack-Mid-term-Project-Ziga-/blob/main/Screenshots/1st%20comp.png" width="20%"></img>
-2nd run:
-<img src="https://github.com/Terminal-zkolar/Ironhack-Mid-term-Project-Ziga-/blob/main/Screenshots/2nd%20run%20r2.png" width="20%"></img>
-<img src="https://github.com/Terminal-zkolar/Ironhack-Mid-term-Project-Ziga-/blob/main/Screenshots/2nd%20comp.png" width="20%"></img>
+- 1st run:
+<img src="https://github.com/Terminal-zkolar/Ironhack-Mid-term-Project-Ziga-/blob/main/Screenshots/1st%20run%20r2.png" width="40%"></img>
+<img src="https://github.com/Terminal-zkolar/Ironhack-Mid-term-Project-Ziga-/blob/main/Screenshots/1st%20comp.png" width="40%"></img>
+
+- 2nd run:
+<img src="https://github.com/Terminal-zkolar/Ironhack-Mid-term-Project-Ziga-/blob/main/Screenshots/2nd%20run%20r2.png" width="40%"></img>
+<img src="https://github.com/Terminal-zkolar/Ironhack-Mid-term-Project-Ziga-/blob/main/Screenshots/2nd%20comp.png" width="40%"></img>
 
 **Future work**:
 - try transform data with techniques like log, boxcox, scaling see how effect the model
