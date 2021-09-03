@@ -40,8 +40,6 @@ lat - Latitude
 long - Longitude
 squft_liv15 - Average size of interior housing living space for the closest 15 houses, in square feet
 squft_lot15 - Average size of land lots for the closest 15 houses, in square feet
-Shape_leng - Polygon length in meters
-Shape_Area - Polygon area in meters
 
 ***Steps from notebook:***
 
