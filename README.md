@@ -93,19 +93,19 @@ After capping outliers the score had a notable change for the better.
 
 
 ***Libraries used:***
-- import pandas as pd
-- import numpy as np
-- import seaborn as sns
-- import matplotlib.pyplot as plt
-- import statsmodels.api as sm
-- import scipy.stats as stats
-- from sklearn.model_selection import train_test_split
-- from sklearn.neighbors import KNeighborsRegressor
-- from sklearn.neural_network import MLPRegressor
-- from sklearn.datasets import make_regression
-- from sklearn.linear_model import LinearRegression
-- from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
-- import warnings
+-  pandas 
+-  numpy 
+-  seaborn 
+-  matplotlib.pyplot 
+-  statsmodels.api 
+-  scipy.stats 
+-  sklearn.model_selection 
+-  sklearn.neighbors 
+-  sklearn.neural_network 
+-  sklearn.datasets 
+-  sklearn.linear_model 
+-  sklearn.metrics i
+-  warnings
 
 ***Additional settings:***
 - warnings.filterwarnings('ignore')
