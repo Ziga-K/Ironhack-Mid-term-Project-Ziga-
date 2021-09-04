@@ -93,19 +93,19 @@ After capping outliers the score had a notable change for the better.
 
 
 ***Libraries used:***
--  pandas 
--  numpy 
--  seaborn 
--  matplotlib.pyplot 
--  statsmodels.api 
--  scipy.stats 
--  sklearn.model_selection 
--  sklearn.neighbors 
--  sklearn.neural_network 
--  sklearn.datasets 
--  sklearn.linear_model 
--  sklearn.metrics i
--  warnings
+-  [pandas](https://pandas.pydata.org/)<br> 
+-  [numpy](https://numpy.org/doc/)<br>
+-  [seaborn](https://seaborn.pydata.org/)<br>
+-  [matplotlib.pyplot](https://matplotlib.org/3.1.1/contents.html)<br>
+-  [statsmodels](https://www.statsmodels.org/stable/index.html)<br>
+-  [scipy.stats](https://docs.scipy.org/doc/scipy/reference/stats.html)<br>
+-  [sklearn.model_selection](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)<br>
+-  [sklearn.neighbors](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)<br>
+-  [sklearn.neural_network](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html)<br>
+-  [sklearn.datasets](https://scikit-learn.org/stable/datasets.html)<br>
+-  [sklearn.linear_model](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)<br>
+-  [sklearn.metrics](https://scikit-learn.org/stable/modules/model_evaluation.html)<br>
+-  [warnings](https://docs.python.org/3/library/warnings.html)<br>
 
 ***Additional settings:***
 - warnings.filterwarnings('ignore')
