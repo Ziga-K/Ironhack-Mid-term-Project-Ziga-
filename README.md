@@ -1,4 +1,4 @@
-### Ironhack Mid-term Project [Ziga]
+### Ironhack Mid-term Project
 
 # House Pricing - Data Analysis & Predicting Market Value
 
